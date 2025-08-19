@@ -1,0 +1,40 @@
+# --- Python 기본 쓰레기들 ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 네이티브/빌드 부산물(혹시 쓰면)
+*.so
+build/
+dist/
+
+# --- 가상환경 / 설정 ---
+.venv/
+venv/
+.env
+.envrc
+
+# --- OS/IDE 잡동사니 ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Ultralytics/런타임 결과물 (커밋 금지) ---
+runs/
+reports/
+weights/
+
+# --- YOLO/라벨링 캐시 파일 ---
+*.cache
+datasets/**/.cache/
+datasets/**/cache/
+datasets/**/labels.cache
+datasets/**/instances*.cache
+
+# --- 라벨링 도구(로컬 클론 넣어뒀으면 커밋하지 말자) ---
+labelImg/
+
+# --- 로그/임시 ---
+*.log
+tmp/
