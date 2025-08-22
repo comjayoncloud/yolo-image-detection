@@ -18,11 +18,13 @@ yolo detect predict \
   source="$SRC" \
   imgsz="$IMGSZ" \
   conf="$CONF" \
+
   save=True save_txt=True save_conf=True \
   project="$OUT_DIR" name="vis" exist_ok=True
 
 # 2) CSV 생성
-python scripts/infer_to_csv.py --exp "$EXP"
+python scripts/infer_to_csv.py --exp "$EXP" --src "$SRC" --imgsz "$IMGSZ" --conf "$CONF"
+
 
 echo "[DONE] vis: $OUT_DIR/vis"
 echo "[DONE] CSV: $OUT_DIR/detections.csv, $OUT_DIR/summary.csv"

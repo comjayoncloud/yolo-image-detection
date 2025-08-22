@@ -6,7 +6,7 @@ import argparse
 EXTS = {".jpg",".jpeg",".png",".bmp",".tif",".tiff"}
 
 p = argparse.ArgumentParser()
-p.add_argument("--exp", required=True, choices=["img10","img50","img100"])
+p.add_argument("--exp", required=True, choices=["img10","img50","img100","onlyspill_41"])
 p.add_argument("--src", default="test_images")
 p.add_argument("--imgsz", type=int, default=640)
 p.add_argument("--conf", type=float, default=0.25)

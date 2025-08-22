@@ -1,4 +1,4 @@
-path: .
+path: datasets/img100
 train: images/train
 val: images/val
 names: [bowl, tray, spill]

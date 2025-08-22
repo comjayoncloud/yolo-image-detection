@@ -48,13 +48,13 @@ pip install pyqt5 lxml
 ## 3) 학습
 
 ```text
-# {img10 | img50 | img100}, epochs, imgsz
-./scripts/infer.sh img10 test_images 640 0.25
+# {img10 | img50 | img100 | onlyspill_41 }, epochs, imgsz, ?, earlystopping
+./scripts/train.sh onlyspill_41 100 640 8 0
 ```
 
 ## 4) 추론
 
 ```text
 # {img10 | img50 | img100}, src 폴더, imgsz, conf
-./scripts/infer.sh img10 test_images 640 0.25
+./scripts/infer.sh img10 test_images/A 640 0.25
 ```
